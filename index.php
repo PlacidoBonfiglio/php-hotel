@@ -55,10 +55,32 @@ $hotels = [
     <main>
         <div class="container">
 
-            <!-- TITOLO -->
+            <!-- TITLE -->
             <h1 class="text-center pt-5 pb-5 fw-bold">PHP Hotels</h1>
 
-            <!-- TABELLA -->
+            <!-- FORM -->
+            <form class="pb-4">
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <select class="form-select form-select-sm" aria-label="Small select example">
+                            <option value="all" selected>Hotel parking lots</option>
+                            <option value="with-parking-lots">Parking lots only</option>
+                        </select>
+                    </div>
+
+                    <div class="col-3">
+                        <select class="form-select form-select-sm" aria-label="Small select example">
+                            <option value="all" selected>Hotel rating</option>
+                            <option value="1-star">1 Star</option>
+                            <option value="2-stars">2 Stars</option>
+                            <option value="4-stars">4 Stars</option>
+                            <option value="5-stars">5 Stars</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+
+            <!-- TABLE -->
             <table class="table table-dark table-hover">
                 <thead>
                     <tr>
@@ -99,31 +121,6 @@ $hotels = [
                     </tr>
                 </tbody>
             </table>
-
-
-            <form>
-                <div class="row justify-content-center">
-                    <div class="col-4">
-                        <select class="form-select form-select-sm" aria-label="Small select example">
-                            <option value="all" selected>Hotel parking lots</option>
-                            <option value="with-parking-lots">Parking lots only</option>
-                        </select>
-                    </div>
-
-                    <div class="col-4">
-                        <select class="form-select form-select-sm" aria-label="Small select example">
-                            <option value="all" selected>Hotel rating</option>
-                            <option value="1-star">1 Star</option>
-                            <option value="2-stars">2 Stars</option>
-                            <option value="4-stars">3 Stars</option>
-                            <option value="5-stars">4 Stars</option>
-                        </select>
-                    </div>
-                </div>
-
-
-
-            </form>
 
         </div>
     </main>
