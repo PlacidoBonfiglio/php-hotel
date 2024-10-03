@@ -61,6 +61,8 @@ $hotels = [
             <!-- FORM -->
             <form class="pb-4">
                 <div class="row justify-content-center">
+
+                    <!-- Parking form -->
                     <div class="col-3">
                         <select class="form-select form-select-sm" aria-label="Small select example">
                             <option value="all" selected>Hotels parking lots</option>
@@ -68,6 +70,7 @@ $hotels = [
                         </select>
                     </div>
 
+                    <!-- Hotels rating form -->
                     <div class="col-3">
                         <select class="form-select form-select-sm" aria-label="Small select example">
                             <option value="all" selected>Hotels rating</option>
