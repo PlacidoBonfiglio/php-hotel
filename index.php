@@ -63,14 +63,14 @@ $hotels = [
                 <div class="row justify-content-center">
                     <div class="col-3">
                         <select class="form-select form-select-sm" aria-label="Small select example">
-                            <option value="all" selected>Hotel parking lots</option>
+                            <option value="all" selected>Hotels parking lots</option>
                             <option value="with-parking-lots">Parking lots only</option>
                         </select>
                     </div>
 
                     <div class="col-3">
                         <select class="form-select form-select-sm" aria-label="Small select example">
-                            <option value="all" selected>Hotel rating</option>
+                            <option value="all" selected>Hotels rating</option>
                             <option value="1-star">1 Star</option>
                             <option value="2-stars">2 Stars</option>
                             <option value="4-stars">4 Stars</option>
