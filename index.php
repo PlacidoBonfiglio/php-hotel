@@ -55,9 +55,10 @@ $hotels = [
     <main>
         <div class="container">
 
+            <!-- TITOLO -->
             <h1 class="text-center pt-5 pb-5 fw-bold">PHP Hotels</h1>
 
-
+            <!-- TABELLA -->
             <table class="table table-dark table-hover">
                 <thead>
                     <tr>
