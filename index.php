@@ -53,21 +53,53 @@ $hotels = [
 
 <body>
     <main>
-        <ul>
-            <?php foreach ($hotels as $hotel) { ?>
-            <li>
-                <h2><?php echo $hotel["name"] ?></h2>
+        <div class="container">
 
-                <h3><?php echo $hotel["description"] ?></h3>
+            <h1 class="text-center pt-5 pb-5 fw-bold">PHP Hotels</h1>
 
-                <h3><?php echo $hotel["parking"] ?></h3>
 
-                <h3><?php echo $hotel["vote"] ?></h3>
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <?php foreach ($hotels as $hotel) { ?>
+                        <th scope="col"> <?php echo $hotel["name"]; ?></th>
+                        <?php } ?>
+                    </tr>
+                </thead>
 
-                <h3><?php echo $hotel["distance_to_center"] ?></h3>
-            </li>
-            <?php } ?>
-        </ul>
+                <tbody>
+                    <tr>
+                        <th>Description</th>
+                        <?php foreach ($hotels as $hotel) { ?>
+                        <td scope="col"> <?php echo $hotel["description"]; ?></td>
+                        <?php } ?>
+                    </tr>
+
+                    <tr>
+                        <th>Parking</th>
+                        <?php foreach ($hotels as $hotel) { ?>
+                        <td scope="col"> <?php echo $hotel["parking"]; ?></td>
+                        <?php } ?>
+                    </tr>
+
+                    <tr>
+                        <th>Vote</th>
+                        <?php foreach ($hotels as $hotel) { ?>
+                        <td scope="col"> <?php echo $hotel["vote"]; ?></td>
+                        <?php } ?>
+                    </tr>
+
+                    <tr>
+                        <th>Distance to center</th>
+                        <?php foreach ($hotels as $hotel) { ?>
+                        <td scope="col"> <?php echo $hotel["distance_to_center"]; ?></td>
+                        <?php } ?>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
     </main>
 </body>
 
