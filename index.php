@@ -87,41 +87,24 @@ $hotels = [
             <table class="table table-dark table-hover">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
-                        <?php foreach ($hotels as $hotel) { ?>
-                        <th scope="col"> <?php echo $hotel["name"]; ?></th>
-                        <?php } ?>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Parking</th>
+                        <th>Vote</th>
+                        <th>Distance to center</th>
                     </tr>
                 </thead>
 
                 <tbody>
+                    <?php foreach ($hotels as $hotel) { ?>
                     <tr>
-                        <th>Description</th>
-                        <?php foreach ($hotels as $hotel) { ?>
+                        <td scope="col"> <?php echo $hotel["name"]; ?></td>
                         <td scope="col"> <?php echo $hotel["description"]; ?></td>
-                        <?php } ?>
-                    </tr>
-
-                    <tr>
-                        <th>Parking</th>
-                        <?php foreach ($hotels as $hotel) { ?>
                         <td scope="col"> <?php echo $hotel["parking"]; ?></td>
-                        <?php } ?>
-                    </tr>
-
-                    <tr>
-                        <th>Vote</th>
-                        <?php foreach ($hotels as $hotel) { ?>
                         <td scope="col"> <?php echo $hotel["vote"]; ?></td>
-                        <?php } ?>
-                    </tr>
-
-                    <tr>
-                        <th>Distance to center</th>
-                        <?php foreach ($hotels as $hotel) { ?>
                         <td scope="col"> <?php echo $hotel["distance_to_center"]; ?></td>
-                        <?php } ?>
                     </tr>
+                    <?php } ?>
                 </tbody>
             </table>
 
